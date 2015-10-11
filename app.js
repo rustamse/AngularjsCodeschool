@@ -6,8 +6,17 @@
   });
 
   app.controller('TabController', function(){
+    this.tab = 1;
  
+    this.setTab = function(setTab) {
+      this.tab = setTab;
+    };
+    
+    this.isSet = function(setTab) {
+      return this.tab == setTab;
+    };  
   });
+  
 
   var gems = [
       {
