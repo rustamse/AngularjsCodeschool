@@ -2,7 +2,10 @@
   var app = angular.module('gemStore', []);
 
   
-
+	app.controller('GalleryController', function(){
+  	
+  });
+  
   app.controller('StoreController', function(){
     this.products = gems;
   });
