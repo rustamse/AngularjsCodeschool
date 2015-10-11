@@ -18,8 +18,8 @@
 
       <!-- Image Gallery  -->
       <div class='gallery' ng-show="product.images.length"
-           ng-controller="GalleryController as gallery">
-        <img ng-src="{{product.images[0]}}" />
+           ng-controller="GalleryController as gController">
+        <img ng-src="{{product.images[gController.current]}}" />
         <ul class="list-inline thumbs">
           <li class="thumbnail" ng-repeat="image in product.images">
             <img ng-src="{{image}}" />
