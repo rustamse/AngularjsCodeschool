@@ -24,14 +24,14 @@
         </ul>
       </section>
 
-      <section class="tab" ng-controller="TabController as tabCtrl">
+      <section class="tab" ng-controller="TabController as tabController">
         <ul class="nav nav-pills">
           <li>
-            <a href>Description</a></li>
+            <a href ng-click="tabController.setTab(1)">Description</a></li>
           <li>
-            <a href>Specs</a></li>
+            <a href ng-click="tabController.setTab(2)">Specs</a></li>
           <li>
-            <a href>Reviews</a></li>
+            <a href ng-click="tabController.setTab(3)">Reviews</a></li>
         </ul>
         <div>
           <h4>Description</h4>
