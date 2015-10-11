@@ -1,4 +1,4 @@
 # AngularjsCodeschool
 Angularjs course at Codeschool
 
-Задание 2.8
+Задание 2.9
