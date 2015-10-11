@@ -3,7 +3,7 @@
 
   
 	app.controller('GalleryController', function(){
-  	
+		this.current = 0;  	
   });
   
   app.controller('StoreController', function(){
