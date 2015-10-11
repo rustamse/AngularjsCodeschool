@@ -26,7 +26,7 @@
 
       <section class="tab" ng-controller="TabController as tabController">
         <ul class="nav nav-pills">
-          <li ng-class="{ active:tabController.tab === 1} ">
+          <li ng-class="{ active:tabController.tab === 1}">
             <a href ng-click="tabController.setTab(1)">Description</a></li>
           <li ng-class="{ active:tabController.tab === 2} ">
             <a href ng-click="tabController.setTab(2)">Specs</a></li>
@@ -35,7 +35,7 @@
         </ul>
         <div ng-show="tabController.isSet(1)">
           <h4>Description</h4>
-          <blockquote></blockquote>
+          <blockquote>{{product.description}}</blockquote>
         </div>
         <div ng-show="tabController.isSet(2)">
           <h4>Specs</h4>
