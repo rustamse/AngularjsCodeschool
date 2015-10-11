@@ -3,7 +3,18 @@
 
   
 	app.controller('GalleryController', function(){
-		this.current = 0;  	
+		this.current = 0;
+    
+    this.setCurrent = function(newCurrent)
+    {
+      if(newCurrent === null)
+      {
+      	newCurrent = 0;
+      }
+           
+      this.current = newCurrent;
+    };
+    
   });
   
   app.controller('StoreController', function(){
